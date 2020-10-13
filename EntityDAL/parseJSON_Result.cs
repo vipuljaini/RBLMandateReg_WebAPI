@@ -11,9 +11,14 @@ namespace EntityDAL
 {
     using System;
     
-    public partial class Sp_UMRNPresentment_Result
+    public partial class parseJSON_Result
     {
-        public Nullable<long> EntityId { get; set; }
-        public long UserId { get; set; }
+        public int element_id { get; set; }
+        public Nullable<int> sequenceNo { get; set; }
+        public Nullable<int> parent_ID { get; set; }
+        public Nullable<int> Object_ID { get; set; }
+        public string NAME { get; set; }
+        public string StringValue { get; set; }
+        public string ValueType { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace EntityDAL
     public partial class tblUserClientCode
     {
         public long UserClientCodeId { get; set; }
-        public Nullable<long> ClientID { get; set; }
+        public string ClientID { get; set; }
         public Nullable<long> AppId { get; set; }
         public Nullable<long> EntityId { get; set; }
         public Nullable<long> UserId { get; set; }

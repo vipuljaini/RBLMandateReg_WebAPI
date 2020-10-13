@@ -11,15 +11,9 @@ namespace EntityDAL
 {
     using System;
     
-    public partial class Sp_Mandate_24_082020_Result
+    public partial class Sp_BankBulkUpload_Result
     {
-        public Nullable<bool> IsFundTransfered { get; set; }
-        public Nullable<long> activityid { get; set; }
-        public string entityid { get; set; }
-        public Nullable<decimal> amount { get; set; }
-        public string Customer1 { get; set; }
-        public string AcNo { get; set; }
-        public string Code { get; set; }
-        public string BankName { get; set; }
+        public long EntityId { get; set; }
+        public string Name { get; set; }
     }
 }

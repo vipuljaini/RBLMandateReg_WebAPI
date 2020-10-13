@@ -15,7 +15,7 @@ namespace EntityDAL
     public partial class tblUserUtilityCode
     {
         public long UserUtilituCodeId { get; set; }
-        public Nullable<long> UtilityCodeId { get; set; }
+        public string UtilityCodeId { get; set; }
         public Nullable<long> EntityId { get; set; }
         public Nullable<long> userid { get; set; }
         public System.DateTime CreatedOn { get; set; }

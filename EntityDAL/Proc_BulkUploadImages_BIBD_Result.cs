@@ -11,9 +11,11 @@ namespace EntityDAL
 {
     using System;
     
-    public partial class Sp_Entity_Result
+    public partial class Proc_BulkUploadImages_BIBD_Result
     {
-        public int CountryId { get; set; }
-        public string CountryName { get; set; }
+        public Nullable<int> TotalRecords { get; set; }
+        public Nullable<int> InvalidRecords { get; set; }
+        public Nullable<int> ImageUploaded { get; set; }
+        public Nullable<int> ImageNotFound { get; set; }
     }
 }

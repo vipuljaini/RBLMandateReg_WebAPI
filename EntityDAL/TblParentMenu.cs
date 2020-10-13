@@ -21,5 +21,6 @@ namespace EntityDAL
         public int CreatedBy { get; set; }
         public bool IsActive { get; set; }
         public bool IsDeleted { get; set; }
+        public Nullable<int> Menuid { get; set; }
     }
 }

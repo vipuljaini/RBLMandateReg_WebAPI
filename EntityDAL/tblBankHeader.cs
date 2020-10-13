@@ -29,5 +29,17 @@ namespace EntityDAL
         public bool IsNetBanking_Sponsor { get; set; }
         public bool IsDebitCard_Sponsor { get; set; }
         public Nullable<long> PennyDropId { get; set; }
+        public Nullable<long> Createdby { get; set; }
+        public Nullable<System.DateTime> CreatedOn { get; set; }
+        public Nullable<long> Updatedby { get; set; }
+        public Nullable<System.DateTime> UpdatedOn { get; set; }
+        public Nullable<bool> IsActive { get; set; }
+        public Nullable<bool> IsDeleted { get; set; }
+        public string ParentBankName { get; set; }
+        public string GuideLines { get; set; }
+        public string AccountValidation { get; set; }
+        public string NPCI { get; set; }
+        public Nullable<bool> NetBanking_EmandateStatus { get; set; }
+        public Nullable<bool> DebitCard_EmandateStatus { get; set; }
     }
 }

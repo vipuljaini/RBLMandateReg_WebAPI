@@ -60,5 +60,7 @@ namespace EntityDAL
         public Nullable<int> EditPerMandate { get; set; }
         public Nullable<int> MandatesPerRefrence { get; set; }
         public Nullable<long> RegionId { get; set; }
+        public int BankBulkUploadMaker { get; set; }
+        public int BankBulkUploadChecker { get; set; }
     }
 }

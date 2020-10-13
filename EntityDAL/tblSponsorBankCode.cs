@@ -30,6 +30,6 @@ namespace EntityDAL
         public Nullable<System.TimeSpan> PresentmentTime { get; set; }
         public string ClientCode { get; set; }
         public Nullable<long> AppId { get; set; }
-        public Nullable<long> ProductId { get; set; }
+        public string ProductName { get; set; }
     }
 }

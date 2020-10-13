@@ -46,5 +46,8 @@ namespace EntityDAL
         public Nullable<int> IswrongAttempt { get; set; }
         public Nullable<long> AppId { get; set; }
         public string EntityName { get; set; }
+        public int BankBulkUploadMaker { get; set; }
+        public int BankBulkUploadChecker { get; set; }
+        public Nullable<int> EditPerMandate { get; set; }
     }
 }

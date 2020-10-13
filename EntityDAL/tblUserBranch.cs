@@ -20,6 +20,13 @@ namespace EntityDAL
         public Nullable<long> EntityId { get; set; }
         public Nullable<long> UserId { get; set; }
         public Nullable<bool> IsPrimary { get; set; }
+        public Nullable<int> Isphysical { get; set; }
+        public Nullable<int> IsEmandate { get; set; }
+        public Nullable<int> IsDebitpresentation { get; set; }
+        public Nullable<int> Isaccountvalidation { get; set; }
+        public Nullable<int> Isaddharvaification { get; set; }
+        public Nullable<int> IsDirectDebit { get; set; }
+        public Nullable<bool> IsCancelled { get; set; }
         public Nullable<bool> IsActive { get; set; }
         public Nullable<bool> IsDeleted { get; set; }
         public Nullable<System.DateTime> CreatedOn { get; set; }

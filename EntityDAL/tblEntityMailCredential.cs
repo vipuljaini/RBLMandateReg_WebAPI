@@ -43,5 +43,8 @@ namespace EntityDAL
         public Nullable<byte> IsLocal { get; set; }
         public Nullable<long> EBulkUploadMax_Count { get; set; }
         public string PAYU_BASE_URL { get; set; }
+        public string E_Web_API_URl { get; set; }
+        public string FileUploadPath { get; set; }
+        public string DownloadFileName { get; set; }
     }
 }

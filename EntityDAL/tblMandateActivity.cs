@@ -32,5 +32,6 @@ namespace EntityDAL
         public string ActivityType { get; set; }
         public Nullable<long> AppId { get; set; }
         public Nullable<long> ProductId { get; set; }
+        public Nullable<bool> IsOneThird { get; set; }
     }
 }

@@ -23,5 +23,7 @@ namespace EntityDAL
         public Nullable<System.DateTime> CreatedOn { get; set; }
         public Nullable<bool> IsActive { get; set; }
         public Nullable<bool> IsDeleted { get; set; }
+        public Nullable<long> ActivityID { get; set; }
+        public string RefrenceNo { get; set; }
     }
 }

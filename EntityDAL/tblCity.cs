@@ -17,13 +17,15 @@ namespace EntityDAL
         public long CityId { get; set; }
         public string CityName { get; set; }
         public Nullable<long> StateId { get; set; }
-        public System.DateTime CreatedOn { get; set; }
-        public System.DateTime ModifiedOn { get; set; }
+        public Nullable<long> CountryId { get; set; }
+        public Nullable<System.DateTime> CreatedOn { get; set; }
+        public Nullable<System.DateTime> ModifiedOn { get; set; }
         public long CreatedBy { get; set; }
-        public long UpdatedBy { get; set; }
-        public bool IsActive { get; set; }
-        public bool IsDeleted { get; set; }
+        public Nullable<long> UpdatedBy { get; set; }
+        public Nullable<bool> IsActive { get; set; }
+        public Nullable<bool> IsDeleted { get; set; }
         public Nullable<long> OrgId { get; set; }
         public Nullable<long> LegalId { get; set; }
+        public string CityCode { get; set; }
     }
 }

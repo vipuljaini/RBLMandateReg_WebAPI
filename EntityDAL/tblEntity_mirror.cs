@@ -97,5 +97,6 @@ namespace EntityDAL
         public Nullable<bool> IsBankValidation { get; set; }
         public string PresentationCreationType { get; set; }
         public Nullable<bool> ApprovalRequired { get; set; }
+        public Nullable<int> Ref2MaxLength { get; set; }
     }
 }

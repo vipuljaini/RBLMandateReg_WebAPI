@@ -102,5 +102,7 @@ namespace EntityDAL
         public string DirectDebitInitiation { get; set; }
         public string DirectDebitResponse { get; set; }
         public string ReflengthType { get; set; }
+        public int MasterBankID { get; set; }
+        public Nullable<int> Ref2MaxLength { get; set; }
     }
 }

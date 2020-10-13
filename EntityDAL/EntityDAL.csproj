@@ -72,689 +72,860 @@
   <ItemGroup>
     <Compile Include="Common.cs" />
     <Compile Include="C_Mirror_TblRoleAccessRights.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="fn_split_string_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="GetEntityID_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="GetMandateStatus_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="GetYears_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Mirror_TblRoleAccessRights.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Mirror_tblUserLogin.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="mirror_Tbl_Links.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="parseJSON_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Proc_BankEntityOnBoarding_BKP_29Sep2020_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Proc_BankEntityOnBoarding_BKP_OLD_Running_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Proc_BankEntityOnBoarding_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Proc_BulkUploadImages_BIBD_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Proc_BulkUploadImages_BulkImageSingleDataEntry_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reconciliation_API.Context.cs">
+    <Compile Include="RBLMandateRegistration.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Reconciliation_API.Context.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Reconciliation_API.cs">
+    <Compile Include="RBLMandateRegistration.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
-    <Compile Include="Reconciliation_API.Designer.cs">
+    <Compile Include="RBLMandateRegistration.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Reconciliation_API.edmx</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.edmx</DependentUpon>
     </Compile>
     <Compile Include="Split_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_BankBulkUpload_BIBD_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_BankBulkUpload_BulkImageSingleDataEntry_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_BankBulkUpload_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_BindMenu_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_Bindrequest_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_BranchCreation_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_BranchMaster_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_Bulkmandate_Aadhar_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_Bulkmandate_DirectDebit_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_Bulkmandate_Physical_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_Bulkmandate_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_CityMaster_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_CollectionStatus_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_CorporateOnBoarding_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_DocumentMaster_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_DownloadEMandate_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_ENach_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sp_Entity_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_ESign_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FinalStatusNotReceived_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GeneraateMandateRegFile_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GenerateZipFromServiceForHDFC_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_GenerateZipFromService_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_GetDashBoardData_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_GetEmailData_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_GetMandatemodeData_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_GetPennydropdetails_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_Home_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_IssueTracking_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_KotakDashboard_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_MandateAnalysis_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_MandateDetails_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_MandateDirectDebit_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_MandateHistory_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_MandateReport_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sp_Mandate_24_082020_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_Mandate_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_MobileUploadImageName_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_NewUploadPhyscialResponse_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_OTP_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_Payment_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
-    <Compile Include="Sp_Presenment_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+    <Compile Include="Sp_PhysicalCancel_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_PhysicalMandateRequestFileMonthWise_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_PhysicalMandateRequestFile_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_PhysicalRegistered_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_QbackRequest_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_RMMaster_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_SelectForChangeRefrence_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_SelectForPhysical_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_ServiceMaster_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_StateMaster_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_SubModuleMaster_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sp_UMRNPresentment_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_UpdateFileStatus_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_Uploaddata1_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_Uploaddata_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_UploadPhyscialResponse_Result.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_UserLogin_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_user_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_WebSevice_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Sp_WindowsService_Result.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblAccessRight.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblAddressMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblAlertNotification.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblAllBulkMandate.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblBankBulkUploadData.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblbankData.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBankDetail.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBankEntityOnBoarding.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblBankHeader.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBankIFSCMICR.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblBankIMP.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBankMaster.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBankOnBoardingAttachment.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBankOnBoardingContactPersonDetail.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBankOnBoardingCountry.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblBankTransAmount.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblBranch.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblBranchMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblBranchUser.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblBulkSMS_MandateWise_Helper.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblCity.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblClientCodeMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblclientData.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblConsent.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCorpOnBoardingBillingDetail.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCorpOnBoardingContactPerson.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblCorporateBusinessCode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblCorporateDetail.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCorporateEntityDetail.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCorporateFinancialDetail.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblCorporateHeader.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCorporateOnBoardingServicesCharge.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblCorporateOtherDetail.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblCorporateProductRequest.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblCorporateRequest.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblCountry.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblCreateMandate.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblCustomer.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblCustomerCardDetail.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblDateFormat.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDesignation.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDocumentMaster.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEmandateLink.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntity.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityAccountvalParameter.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityApiParameter.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityBankSetup.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityBankSetupDate.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityBusinessCode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityCategoryCode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityDebitType.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityFrequency.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityMailCredential.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblEntityMandateMode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityPaymentMode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityPeriondEnableOn.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityPrimaryEmandateDetail.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityResponseURL.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntitySponsorcodeFileName.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntityTodebit.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntity_MandateCancelParameter.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEntity_mirror.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblErrorCode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEsignErrorMandateLog.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEsignLogMessageId.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEsignRequest.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblEsignResponse.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblExlUploadedData.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblExlUploadedDataHeader.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblFileFormat.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblFileNumberSequence.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TBLFILESEQUENCE.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblfrequencyName.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblFromDateParamsMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblHeadBankMaster.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblHolidayMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblIDFCResponseCode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblIDFC_SeqCount.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblIFSCBank.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblIFSCBanksNew.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblImageActivity.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblImageActivityDetail.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblInCompleteMandate.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblIssuceDetail.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblIssueHeader.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblIssue_ImageAttachement.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblLegacyDetail.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblLegacyHeader.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblLegacyUnSuccess_Detail.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblLegacyUploaded.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblLoginSessionTrxn.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tbllogMandate.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tbllogMandateDirectDebit.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblLogoImage.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblLogoImage1.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblLogTransaction.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblMailMsgTransaction.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandate.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandateActivity.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandateActivityDate.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandateActivityLog.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandateAdhar.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMandateBankBulkUploadHistory.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblmandatebankbulkuploadhistory_15sept2020.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandateDirectDebit.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandateDirectdebitUniqueId.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandateFile.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandateMobile.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandateStatu.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandateStatusMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandateTransaction.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandateUniqueId.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandate_Canceled.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandate_Emandate.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandate_ERegistered.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandate_ERejected.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandate_Physical.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandate_PRegistered.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMandate_PRejected.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMandate_Reverse.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMandate_Temp.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMergedData.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMobileUserLogin.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblModuleMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMsgMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMsgTransaction.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblNPCIResponse.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblNPCIResponseFromService.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblNPCIResponseHDFC.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblParentMenu.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblPaymentMode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblPaymentRequest.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblPaymentResponse.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblPennyDropAPIdetail.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPhysicalRequestHeader.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblPresentmentDetailSeqCount.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblPresentmentMaker.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblPresentmentRejectedUMRN.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblPresentmentResponseDetail.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblPresentmentResponseHeader.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblPresentmentSeqcount.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPresentment_ExlUploadDataDetail.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPresentment_ExlUploadDataHeader.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblPriority.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblProductMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPSMMaster.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblQbackActivity.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblQbackLogPaymentResponse.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblQbackPaymentRequest.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblQbackPaymentResponse.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblReasonCode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblRecipientMailId.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblRedirectURL.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRegionalManagerMaster.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblRegionMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblReportMapDB.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblRMMaster.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblRoleAccessRight.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblRoleLinkBinding.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblRoleMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSegmentMaster.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblServiceLog.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblServiceMaster.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblSponsorBankCode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblSponsorBankCodeDetail.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblState.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblStateMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblStatu.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblStatusMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblSubModuleMaster.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblSubParentMenu.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblTempIFSCBank.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblToBePresentUMRN_Detail.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblTransactionPresentment.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblTransactionPresentmentHistory.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblTransPresentmentHeader.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblUploadPhysicalResponseFileDetail.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblUploadPhysicalResponseFileHeader.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblUserBranch.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblUserCategoryCode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblUserClientCode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblUserLogin.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblUserPaymentMode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblUserSponsorBankCode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblUserUtilityCode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblUserWiseEntity.cs">
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="TblUserWiseProduct.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblUtlityCode.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tblYoekiResponse.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tbl_AllDatabaseName.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Tbl_Icon.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="Tbl_Links.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tbl_MSG91_DeliveryReport.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tbl_MSG91_DeliveryReport_Master.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tbl_SubmittedDataDetails.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="tbl_SumbittedDataHeader.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="vwKotakBillingReport.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
     <Compile Include="vwMandateLastTransaction.cs">
-      <DependentUpon>Reconciliation_API.tt</DependentUpon>
+      <DependentUpon>RBLMandateRegistration.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
     <None Include="packages.config" />
-    <EntityDeploy Include="Reconciliation_API.edmx">
+    <EntityDeploy Include="RBLMandateRegistration.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Reconciliation_API.Designer.cs</LastGenOutput>
+      <LastGenOutput>RBLMandateRegistration.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Reconciliation_API.edmx.diagram">
-      <DependentUpon>Reconciliation_API.edmx</DependentUpon>
+    <None Include="RBLMandateRegistration.edmx.diagram">
+      <DependentUpon>RBLMandateRegistration.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Reconciliation_API.Context.tt">
+    <Content Include="RBLMandateRegistration.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Reconciliation_API.edmx</DependentUpon>
-      <LastGenOutput>Reconciliation_API.Context.cs</LastGenOutput>
+      <DependentUpon>RBLMandateRegistration.edmx</DependentUpon>
+      <LastGenOutput>RBLMandateRegistration.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Reconciliation_API.tt">
+    <Content Include="RBLMandateRegistration.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Reconciliation_API.edmx</DependentUpon>
-      <LastGenOutput>Reconciliation_API.cs</LastGenOutput>
+      <DependentUpon>RBLMandateRegistration.edmx</DependentUpon>
+      <LastGenOutput>RBLMandateRegistration.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

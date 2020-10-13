@@ -16,7 +16,7 @@ namespace EntityDAL
     {
         public long UserProductID { get; set; }
         public long UserId { get; set; }
-        public int ProductId { get; set; }
+        public string ProductName { get; set; }
         public int EntityId { get; set; }
         public string AppId { get; set; }
         public int CreatedBy { get; set; }

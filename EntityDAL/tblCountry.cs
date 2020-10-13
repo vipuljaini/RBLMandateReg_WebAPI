@@ -14,15 +14,16 @@ namespace EntityDAL
     
     public partial class tblCountry
     {
-        public int CountryId { get; set; }
+        public long CountryId { get; set; }
         public string CountryName { get; set; }
-        public System.DateTime CreatedOn { get; set; }
-        public System.DateTime ModifiedOn { get; set; }
+        public Nullable<System.DateTime> CreatedOn { get; set; }
+        public Nullable<System.DateTime> ModifiedOn { get; set; }
         public long CreatedBy { get; set; }
-        public long UpdatedBy { get; set; }
-        public bool IsActive { get; set; }
-        public bool IsDeleted { get; set; }
+        public Nullable<long> UpdatedBy { get; set; }
+        public Nullable<bool> IsActive { get; set; }
+        public Nullable<bool> IsDeleted { get; set; }
         public Nullable<long> OrgId { get; set; }
         public Nullable<long> LegalId { get; set; }
+        public string CountryCode { get; set; }
     }
 }

@@ -23,6 +23,6 @@ namespace EntityDAL
         public Nullable<long> UpdatedBy { get; set; }
         public Nullable<long> IsActive { get; set; }
         public Nullable<long> IsDeleted { get; set; }
-        public Nullable<long> AppId { get; set; }
+        public int LinkID { get; set; }
     }
 }

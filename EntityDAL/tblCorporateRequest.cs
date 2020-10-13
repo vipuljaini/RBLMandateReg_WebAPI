@@ -23,6 +23,7 @@ namespace EntityDAL
         public Nullable<bool> IsDebitPresentation { get; set; }
         public Nullable<bool> IsAccountValidation { get; set; }
         public Nullable<bool> IsAPiIntegration { get; set; }
+        public Nullable<bool> Isdirectdebit { get; set; }
         public Nullable<bool> Isaadharbasevalidation { get; set; }
         public string PrimaryName { get; set; }
         public string PrimaryEmail { get; set; }

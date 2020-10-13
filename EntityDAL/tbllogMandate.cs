@@ -73,6 +73,6 @@ namespace EntityDAL
         public string NPCIMsgId { get; set; }
         public string CategoryCode { get; set; }
         public Nullable<long> AppId { get; set; }
-        public Nullable<long> ProductId { get; set; }
+        public string ProductId { get; set; }
     }
 }

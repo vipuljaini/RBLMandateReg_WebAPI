@@ -15,7 +15,7 @@ namespace EntityDAL
     public partial class tblUserSponsorBankCode
     {
         public long UserSponsorBankCodeId { get; set; }
-        public Nullable<long> SponsorBankCodeId { get; set; }
+        public string SponsorBankCodeId { get; set; }
         public Nullable<long> UserId { get; set; }
         public Nullable<long> EntityId { get; set; }
         public System.DateTime CreatedOn { get; set; }

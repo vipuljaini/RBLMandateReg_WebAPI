@@ -105,6 +105,8 @@ namespace EntityDAL
         public Nullable<long> StatusId { get; set; }
         public string VPAId { get; set; }
         public Nullable<long> AppId { get; set; }
-        public Nullable<long> ProductId { get; set; }
+        public string ProductId { get; set; }
+        public bool IsSendtoChecker { get; set; }
+        public Nullable<int> EditCount { get; set; }
     }
 }

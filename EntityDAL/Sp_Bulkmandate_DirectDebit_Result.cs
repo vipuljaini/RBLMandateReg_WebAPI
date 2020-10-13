@@ -11,9 +11,16 @@ namespace EntityDAL
 {
     using System;
     
-    public partial class Sp_Presenment_Result
+    public partial class Sp_Bulkmandate_DirectDebit_Result
     {
-        public long SponsorBankCodeId { get; set; }
-        public string SponsorBankCodeName { get; set; }
+        public string Reference { get; set; }
+        public string CustomerName { get; set; }
+        public string BankacNumber { get; set; }
+        public string IFSC { get; set; }
+        public string Remark { get; set; }
+        public string AmountRupees { get; set; }
+        public string PhoneNumber { get; set; }
+        public string EmailId { get; set; }
+        public Nullable<long> ULUID { get; set; }
     }
 }
