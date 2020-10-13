@@ -11,6 +11,7 @@ namespace RBLMandateRegWebAPI.Models.FrontUnProcessedMandates
     {
         QuickCheck_AngularEntities context = new QuickCheck_AngularEntities();
 
+
         public Dictionary<string, object> BindGrid(RequestFields Data)
         {
             try
