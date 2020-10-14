@@ -9,6 +9,8 @@ namespace RBLMandateRegWebAPI.Models.BISE
     {
         public Int64 SrNo { get; set; }
         public string Bank_Name { get; set; }
+        public string CorporateName { get; set; }
+        
         public string ActivityNo { get; set; }
         public string Noofrecipient { get; set; }
         public string ImageUpload { get; set; }
@@ -36,5 +38,11 @@ namespace RBLMandateRegWebAPI.Models.BISE
         public string UpdatedBy { get; set; }
         public string UpdateOn { get; set; }
         public string Status { get; set; }
+    }
+
+    public class Response
+    {
+        public string Result { get; set; }
+        
     }
 }
