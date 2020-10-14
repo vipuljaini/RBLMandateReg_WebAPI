@@ -15,7 +15,7 @@ namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
     public class GridDataTable
     {
         public Int64 SNo { get; set; }
-        public Int64 PTID { get; set; }
+        public Int32 PTID { get; set; }
         public string Presentationdate { get; set; }
         public string ActivityNo { get; set; }
         public string PresentationNo { get; set; }
@@ -34,5 +34,41 @@ namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
         public string LastStatusOn { get; set; }
         public string Filestatus { get; set; }
         
+    }
+
+    public class DataTable0
+    {
+        public Int64 SrNo { get; set; }
+        public string UMRN { get; set; }
+        public string Amount { get; set; }
+        public string RefNo { get; set; }
+        public string Reason { get; set; }
+    }
+
+    public class DataTable1
+    {
+        public Int64 SrNo { get; set; }
+        public string UMRN { get; set; }
+        public string Amount { get; set; }
+        public string RefNo { get; set; }
+        public string Reason { get; set; }
+    }
+
+    public class DataTable2
+    {
+        public Int64 SrNo { get; set; }
+        public string UMRN { get; set; }
+        public string Amount { get; set; }
+        public string RefNo { get; set; }
+        public string Reason { get; set; }
+    }
+
+    public class DataTable3
+    {
+        public Int64 SrNo { get; set; }
+        public string UMRN { get; set; }
+        public string Amount { get; set; }
+        public string RefNo { get; set; }
+        public string Reason { get; set; }
     }
 }
