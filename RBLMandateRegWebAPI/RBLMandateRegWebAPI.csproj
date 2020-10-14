@@ -47,10 +47,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BusinessLibrary">
+
+      <HintPath>..\..\QuickZip(Angular)\QuickZipWebApi\LoginWebApi\bin\BusinessLibrary.dll</HintPath>
+
       <HintPath>..\BusinessLibrary\bin\Debug\BusinessLibrary.dll</HintPath>
     </Reference>
     <Reference Include="EntityDAL">
       <HintPath>..\EntityDAL\bin\Debug\EntityDAL.dll</HintPath>
+
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -236,10 +240,15 @@
 
 
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NPCIUnProcessMandateController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+
+    <Compile Include="Models\NPCIUnProcessMandate.cs" />
+    <Compile Include="Models\NPCIUnProcessMandateDAL.cs" />
+
 
     <Compile Include="Models\BulkImageExcelReceivingApprovalModal.cs" />
 
@@ -249,6 +258,7 @@
     <Compile Include="Models\FrontUnProcessedMandates\BindFields.cs" />
     <Compile Include="Models\FrontUnProcessedMandates\DataAccessLayer.cs" />
     <Compile Include="Models\FrontUnProcessedMandates\RequestFields.cs" />
+
 
 
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -308,7 +318,10 @@
     <Folder Include="App_Data\" />
 
 
+
+
     <Folder Include="Controllers\BusinessLoginBISE\" />
+
 
   </ItemGroup>
   <ItemGroup>
@@ -341,12 +354,17 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+
+    <ProjectReference Include="..\EntityDAL\EntityDAL.csproj">
+      <Project>{CF4643A5-80C9-40B9-AE92-F71B78B5EFD0}</Project>
+
     <ProjectReference Include="..\BusinessLibrary\BusinessLibrary.csproj">
       <Project>{82e12120-2ba7-4313-ab7f-f845f69980bb}</Project>
       <Name>BusinessLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\EntityDAL\EntityDAL.csproj">
       <Project>{cf4643a5-80c9-40b9-ae92-f71b78b5efd0}</Project>
+
       <Name>EntityDAL</Name>
     </ProjectReference>
   </ItemGroup>
