@@ -28,5 +28,22 @@ namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
                 throw ex;
             }
         }
+        public Dictionary<string, object> BindDetailsGrid(UserDetails data)
+        {
+
+            try
+            {
+                var results = Common.Getdata(dbcontext.MultipleResults("[dbo].[TEMPDESTPRESENT]").With<DataTable0>().With<DataTable1>().With<DataTable2>().With<DataTable3>()
+                          .Execute("@Querytype", "@EntityId", "@UserId", "BindDetailsGrid_Sponsor", Dbsecurity.Decrypt(data.EntityId), Dbsecurity.Decrypt(data.UserId)));
+                return results;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
     }
 }
