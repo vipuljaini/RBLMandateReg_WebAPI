@@ -46,8 +46,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Encryptions">
-      <HintPath>C:\Users\YoekiDev\Downloads\Encryptions.dll</HintPath>
+    <Reference Include="BusinessLibrary">
+      <HintPath>..\BusinessLibrary\bin\Debug\BusinessLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityDAL">
+      <HintPath>..\EntityDAL\bin\Debug\EntityDAL.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -223,14 +226,31 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+
+    <Compile Include="Controllers\BulkImageExcelReceivingApprovalController.cs" />
+
+
+    <Compile Include="Controllers\BISE\BISEController.cs" />
+
+    <Compile Include="Controllers\FrontUnProcessedMandatesController.cs" />
+
+
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\UnprocessedPresentationsSponsorController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\UnprocessedPresentationsSponsor\UnprocessedPresentationsDAL.cs" />
-    <Compile Include="Models\UnprocessedPresentationsSponsor\UserDetails.cs" />
+
+    <Compile Include="Models\BulkImageExcelReceivingApprovalModal.cs" />
+
+
+    <Compile Include="Models\BISE\BISEHeader.cs" />
+
+    <Compile Include="Models\FrontUnProcessedMandates\BindFields.cs" />
+    <Compile Include="Models\FrontUnProcessedMandates\DataAccessLayer.cs" />
+    <Compile Include="Models\FrontUnProcessedMandates\RequestFields.cs" />
+
+
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -286,6 +306,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+
+
+    <Folder Include="Controllers\BusinessLoginBISE\" />
+
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
