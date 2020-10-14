@@ -227,9 +227,13 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
 
+    <Compile Include="Controllers\BulkImageExcelReceivingApprovalController.cs" />
+
+
     <Compile Include="Controllers\BISE\BISEController.cs" />
 
     <Compile Include="Controllers\FrontUnProcessedMandatesController.cs" />
+
 
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -237,11 +241,15 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
 
+    <Compile Include="Models\BulkImageExcelReceivingApprovalModal.cs" />
+
+
     <Compile Include="Models\BISE\BISEHeader.cs" />
 
     <Compile Include="Models\FrontUnProcessedMandates\BindFields.cs" />
     <Compile Include="Models\FrontUnProcessedMandates\DataAccessLayer.cs" />
     <Compile Include="Models\FrontUnProcessedMandates\RequestFields.cs" />
+
 
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -299,6 +307,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
 
+
     <Folder Include="Controllers\BusinessLoginBISE\" />
 
   </ItemGroup>
@@ -330,6 +339,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLibrary\BusinessLibrary.csproj">
+      <Project>{82e12120-2ba7-4313-ab7f-f845f69980bb}</Project>
+      <Name>BusinessLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityDAL\EntityDAL.csproj">
+      <Project>{cf4643a5-80c9-40b9-ae92-f71b78b5efd0}</Project>
+      <Name>EntityDAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
