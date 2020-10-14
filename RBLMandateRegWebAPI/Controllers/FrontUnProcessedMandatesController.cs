@@ -19,5 +19,29 @@ namespace RBLMandateRegWebAPI.Controllers
             return ObjDAL.BindGrid(Data);
 
         }
+
+        [HttpPost]
+        [Route("api/FrontUnderProcessedMandate/BindGridUnderProcess")]
+        public Dictionary<string, object> BindGridUnderProcess([FromBody] RequestFields Data)
+        {
+            return ObjDAL.BindGridUnderProcess(Data);
+
+        }
+
+        [HttpPost]
+        [Route("api/FrontUnderProcessedMandate/GetUMRN")]
+        public Dictionary<string, object> GetUMRN([FromBody] RequestFields Data)
+        {
+            return ObjDAL.GetUMRN(Data);
+
+        }
+
+        [HttpPost]
+        [Route("api/FrontUnderProcessedMandate/GetResponse")]
+        public Dictionary<string, object> GetResponse([FromBody] RequestFields Data)
+        {
+            return ObjDAL.GetResponse(Data);
+
+        }
     }
 }

@@ -32,7 +32,8 @@ namespace RBLMandateRegWebAPI.Models.FrontUnProcessedMandates
         public string SponsorbankCode { get; set; }
         public string CreatedBy { get; set; }
         public string CreatedOn { get; set; }
+        public string UpdatedBy { get; set; }
         public string NPCIErrorDesc { get; set; }
-
+        public string CorporateName { get; set; }
     }
 }
