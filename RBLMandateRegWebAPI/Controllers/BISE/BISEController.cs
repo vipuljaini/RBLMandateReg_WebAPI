@@ -29,6 +29,7 @@ namespace RBLMandateRegWebAPI.Controllers.BISE
             }
         }
 
+
         [HttpPost]
         [Route("api/BISETemp/BindDetails/")]
         public Dictionary<string, object> BindDetails()
