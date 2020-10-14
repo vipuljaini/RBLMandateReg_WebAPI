@@ -49,6 +49,10 @@
     <Reference Include="BusinessLibrary">
       <HintPath>..\BusinessLibrary\bin\Debug\BusinessLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="Encryptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\YoekiDev\Downloads\Encryptions.dll</HintPath>
+    </Reference>
     <Reference Include="EntityDAL">
       <HintPath>..\EntityDAL\bin\Debug\EntityDAL.dll</HintPath>
     </Reference>
@@ -226,31 +230,22 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-
     <Compile Include="Controllers\BulkImageExcelReceivingApprovalController.cs" />
-
-
     <Compile Include="Controllers\BISE\BISEController.cs" />
-
     <Compile Include="Controllers\FrontUnProcessedMandatesController.cs" />
-
-
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UnprocessedPresentationsSponsorController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-
     <Compile Include="Models\BulkImageExcelReceivingApprovalModal.cs" />
-
-
     <Compile Include="Models\BISE\BISEHeader.cs" />
-
     <Compile Include="Models\FrontUnProcessedMandates\BindFields.cs" />
     <Compile Include="Models\FrontUnProcessedMandates\DataAccessLayer.cs" />
     <Compile Include="Models\FrontUnProcessedMandates\RequestFields.cs" />
-
-
+    <Compile Include="Models\UnprocessedPresentationsSponsor\UnprocessedPresentationsDAL.cs" />
+    <Compile Include="Models\UnprocessedPresentationsSponsor\UserDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -289,7 +284,9 @@
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -306,10 +303,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-
-
     <Folder Include="Controllers\BusinessLoginBISE\" />
-
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

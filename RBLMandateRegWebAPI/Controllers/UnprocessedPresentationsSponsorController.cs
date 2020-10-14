@@ -20,5 +20,12 @@ namespace RBLMandateRegWebAPI.Controllers
         {
             return obj.BindHeaderGrid(data);
         }
+
+        [HttpPost]
+        [Route("api/UnprocessedPresentationsFront/FrontUnprocessedPresentationsDetails")]
+        public Dictionary<string, object> BindDetailsGrid(UserDetails data)
+        {
+            return obj.BindDetailsGrid(data);
+        }
     }
 }
