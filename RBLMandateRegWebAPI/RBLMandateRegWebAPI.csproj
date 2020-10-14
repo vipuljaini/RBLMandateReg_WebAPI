@@ -226,13 +226,24 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+
     <Compile Include="Controllers\BISE\BISEController.cs" />
     <Compile Include="Controllers\FrontUnProcessedMandatesController.cs" />
+
+    <Compile Include="Controllers\FrontUnProcessedMandatesController.cs" />
+
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+<<<<<<<<< Temporary merge branch 1
+    <Compile Include="Models\FrontUnProcessedMandates\BindFields.cs" />
+    <Compile Include="Models\FrontUnProcessedMandates\DataAccessLayer.cs" />
+    <Compile Include="Models\FrontUnProcessedMandates\RequestFields.cs" />
+=========
+    <Compile Include="Models\BISE\BISEHeader.cs" />
+>>>>>>>>> Temporary merge branch 2
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -288,7 +299,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+<<<<<<<<< Temporary merge branch 1
+=========
+    <Folder Include="Controllers\BusinessLoginBISE\" />
+>>>>>>>>> Temporary merge branch 2
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
