@@ -242,8 +242,9 @@
     <Compile Include="Controllers\BulkImageExcelReceivingApprovalController.cs" />
     <Compile Include="Controllers\BISE\BISEController.cs" />
     <Compile Include="Controllers\DestUnprocessedPresentationControllerController.cs" />
+    
+    <Compile Include="Controllers\BusinessLogicBISE\BISEDAL.cs" />
     <Compile Include="Controllers\FrontUnProcessedMandatesController.cs" />
-
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NPCIUnProcessMandateController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -251,22 +252,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
 
-    <Compile Include="Models\DestUnprocessedPresent\Binddata.cs" />
-    <Compile Include="Models\DestUnprocessedPresent\DestPresent.cs" />
-
-
-    <Compile Include="Models\Back_Office_Mandate_Request\DataAccessLayer.cs" />
-    <Compile Include="Models\Back_Office_Mandate_Request\MandateRequest.cs" />
-    <Compile Include="Models\Back_Office_Mandate_Request\MandateRequestData.cs" />
-
-
-    <Compile Include="Models\NPCIUnProcessMandate.cs" />
-    <Compile Include="Models\NPCIUnProcessMandateDAL.cs" />
-    <Compile Include="Models\BulkImageExcelReceivingApprovalModal.cs" />
     <Compile Include="Models\BISE\BISEHeader.cs" />
+
     <Compile Include="Models\FrontUnProcessedMandates\BindFields.cs" />
     <Compile Include="Models\FrontUnProcessedMandates\DataAccessLayer.cs" />
     <Compile Include="Models\FrontUnProcessedMandates\RequestFields.cs" />
+
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -324,11 +315,6 @@
     <Folder Include="App_Data\" />
 
     <Folder Include="Controllers\BusinessLoginBISE\" />
-
-
-
-
-
 
   </ItemGroup>
   <ItemGroup>
