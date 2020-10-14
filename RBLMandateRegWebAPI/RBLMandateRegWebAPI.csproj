@@ -48,14 +48,17 @@
   <ItemGroup>
     <Reference Include="BusinessLibrary">
 
-      <HintPath>..\..\QuickZip(Angular)\QuickZipWebApi\LoginWebApi\bin\BusinessLibrary.dll</HintPath>
-
-      <HintPath>..\BusinessLibrary\bin\Debug\BusinessLibrary.dll</HintPath>
+      <HintPath>..\EntityDAL\bin\Debug\BusinessLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Encryptions">
+      <HintPath>D:\CloudProjects\CorporateOnBoardingWebAPI\CorporateOnBoarding\EntityDAL\bin\Debug\Encryptions.dll</HintPath>
     </Reference>
     <Reference Include="EntityDAL">
       <HintPath>..\EntityDAL\bin\Debug\EntityDAL.dll</HintPath>
 
+      <HintPath>..\BusinessLibrary\bin\Debug\BusinessLibrary.dll</HintPath>
     </Reference>
+  
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -231,6 +234,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
 
+    <Compile Include="Controllers\BackUnProcessedMandateRequestController.cs" />
+
     <Compile Include="Controllers\BulkImageExcelReceivingApprovalController.cs" />
 
 
@@ -239,12 +244,17 @@
     <Compile Include="Controllers\FrontUnProcessedMandatesController.cs" />
 
 
+
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NPCIUnProcessMandateController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+
+    <Compile Include="Models\Back_Office_Mandate_Request\DataAccessLayer.cs" />
+    <Compile Include="Models\Back_Office_Mandate_Request\MandateRequest.cs" />
+    <Compile Include="Models\Back_Office_Mandate_Request\MandateRequestData.cs" />
 
     <Compile Include="Models\NPCIUnProcessMandate.cs" />
     <Compile Include="Models\NPCIUnProcessMandateDAL.cs" />
@@ -320,7 +330,9 @@
 
 
 
+
     <Folder Include="Controllers\BusinessLoginBISE\" />
+
 
 
   </ItemGroup>
