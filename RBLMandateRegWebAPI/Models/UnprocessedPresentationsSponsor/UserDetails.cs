@@ -23,17 +23,19 @@ namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
         public string CreatedBy { get; set; }
         public string UpdatedBy { get; set; }
         public string UpdatedOn { get; set; }
-
         public string ApproveBy { get; set; }
         public string ApproveOn { get; set; }
         public string Branch { get; set; }
         public string Region { get; set; }
         public string Product { get; set; }
-
         public string BankName { get; set; }
         public string LastStatusOn { get; set; }
         public string Filestatus { get; set; }
-        
+
+        public string Lotno { get; set; }
+        public Int32 noofrecord { get; set; }
+        public string Lotstatus { get; set; }
+
     }
 
     public class DataTable0
@@ -43,6 +45,8 @@ namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
         public string Amount { get; set; }
         public string RefNo { get; set; }
         public string Reason { get; set; }
+        public string sponsorbankcode { get; set; }
+        public string utilitycode { get; set; }
     }
 
     public class DataTable1
@@ -52,6 +56,8 @@ namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
         public string Amount { get; set; }
         public string RefNo { get; set; }
         public string Reason { get; set; }
+        public string sponsorbankcode { get; set; }
+        public string utilitycode { get; set; }
     }
 
     public class DataTable2
@@ -61,6 +67,8 @@ namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
         public string Amount { get; set; }
         public string RefNo { get; set; }
         public string Reason { get; set; }
+        public string sponsorbankcode { get; set; }
+        public string utilitycode { get; set; }
     }
 
     public class DataTable3
@@ -70,5 +78,7 @@ namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
         public string Amount { get; set; }
         public string RefNo { get; set; }
         public string Reason { get; set; }
+        public string sponsorbankcode { get; set; }
+        public string utilitycode { get; set; }
     }
 }
