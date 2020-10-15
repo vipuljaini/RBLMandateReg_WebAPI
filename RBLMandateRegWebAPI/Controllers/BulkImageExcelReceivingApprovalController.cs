@@ -16,11 +16,19 @@ namespace RBLMandateRegWebAPI.Controllers
         [Route("api/BulkImageExcelReceivingApproval/FetchData")]
         public BulkImageExcelReceivingApprovalModallist FetchData(BulkImageExcelReceivingApprovalModal Acdata)
         {
-            BulkImageExcelReceivingApprovalModallist res = new BulkImageExcelReceivingApprovalModallist();
-            QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();                    
-            var Result = dbcontext.MultipleResults("[dbo].[sp_Temp_BulkImageExcelReceivingApproval]").With<BulkImageExcelReceivingApprovalModal>().Execute("@QueryType", "FetchData");            
-            res.BulkImageExcelReceivingApprovalModalList = Result[0].Cast<BulkImageExcelReceivingApprovalModal>().ToList();
-            return res;
+            try
+            {
+
+                BulkImageExcelReceivingApprovalModallist res = new BulkImageExcelReceivingApprovalModallist();
+                QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();
+                var Result = dbcontext.MultipleResults("sp_Temp_BulkImageExcelReceivingApproval").With<BulkImageExcelReceivingApprovalModal>().Execute("@QueryType", "FetchData");
+                res.BulkImageExcelReceivingApprovalModalList = Result[0].Cast<BulkImageExcelReceivingApprovalModal>().ToList();
+                return res;
+            }
+            catch(Exception ex)
+            {
+                return null;
+            }
         }
     }
 }
