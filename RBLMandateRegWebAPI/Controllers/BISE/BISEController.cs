@@ -9,6 +9,7 @@ using BusinessLibrary;
 using EntityDAL;
 using RBLMandateRegWebAPI.Controllers.BusinessLogicBISE;
 using RBLMandateRegWebAPI.Models.BISE;
+using System.IO;
 
 namespace RBLMandateRegWebAPI.Controllers.BISE
 {
