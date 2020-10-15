@@ -22,5 +22,20 @@ namespace RBLMandateRegWebAPI.Models
                 throw ex;
             }
         }
+
+        public Dictionary<string, object> BindNpciApprovalProcessGrid(GetDatavalue obj)
+        {
+            QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();
+            try
+            {
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_NPCIUnprocessedMandates]").With<GridBind1>()
+                .Execute("@QueryType", "@AppId", "Bindnpciapprovalprocess", obj.AppId));
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
