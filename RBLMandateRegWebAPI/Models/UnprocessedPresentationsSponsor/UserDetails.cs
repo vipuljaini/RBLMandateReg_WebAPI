@@ -16,6 +16,7 @@ namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
     {
         public Int64 SNo { get; set; }
         public Int32 PTID { get; set; }
+
         public string Presentationdate { get; set; }
         public string ActivityNo { get; set; }
         public string PresentationNo { get; set; }

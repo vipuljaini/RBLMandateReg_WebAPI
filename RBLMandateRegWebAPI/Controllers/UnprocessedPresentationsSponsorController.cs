@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using EntityDAL;
 using BusinessLibrary;
+using System.IO;
 using RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor;
 
 namespace RBLMandateRegWebAPI.Controllers
