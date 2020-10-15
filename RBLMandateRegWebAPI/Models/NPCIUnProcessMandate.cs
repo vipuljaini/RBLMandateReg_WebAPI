@@ -31,5 +31,31 @@ namespace RBLMandateRegWebAPI.Models
             public string UpdatedBy { get; set; }
 
         }
+
+        public class GridBind1
+        {
+
+          //  public Nullable<Int64> ActivityId { get; set; }
+
+            public string CategoryCode { get; set; }
+            public string UtilityCode { get; set; }
+            public string DateOnMandate { get; set; } //char
+            public string SponsorbankCode { get; set; }
+            public string ToDebit { get; set; }
+           // public Nullable<Boolean> IsRejected { get; set; }
+            public string AcNo { get; set; }
+
+            public string IFSC { get; set; }
+            public Nullable<Double> MICR { get; set; }
+            public string AmountRupees { get; set; }
+            public string AmountRupeesInWords { get; set; }
+
+            public string Frequency { get; set; }
+            public string DebitType { get; set; }
+            public string Refrence1 { get; set; }
+            public string Refrence2 { get; set; }
+            public string PhoneNumber { get; set; }
+            public string EmailId { get; set; }
+        }
     }
 }

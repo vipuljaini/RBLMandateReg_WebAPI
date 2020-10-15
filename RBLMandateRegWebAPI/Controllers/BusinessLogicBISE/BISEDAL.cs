@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.IO;
 
 namespace RBLMandateRegWebAPI.Controllers.BusinessLogicBISE
 {
@@ -57,6 +58,7 @@ namespace RBLMandateRegWebAPI.Controllers.BusinessLogicBISE
             {
                 var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Proc_BISE]").With<Response>().Execute("@QueryType", "Approve"));
                 return Result;
+
             }
             catch (Exception ex)
             {

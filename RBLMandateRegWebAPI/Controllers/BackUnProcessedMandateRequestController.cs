@@ -25,5 +25,22 @@ namespace RBLMandateRegWebAPI.Controllers
 
         }
 
+
+        [HttpPost]
+        [Route("api/RBLMandate/UnderProcessHeader")]
+        public Dictionary<string, object> UnderProcessHeader([FromBody] MandateRequest MandateRequestData)
+        {
+            return objRBLMandateRequest.UnderProcessHeader(MandateRequestData);
+
+        }
+
+        [HttpPost]
+        [Route("api/RBLMandate/UnderProcessDetails")]
+        public Dictionary<string, object> UnderProcessDetails([FromBody] MandateRequest MandateRequestData)
+        {
+            return objRBLMandateRequest.UnderProcessDetails(MandateRequestData);
+
+        }
+
     }
 }
