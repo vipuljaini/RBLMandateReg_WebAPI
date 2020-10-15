@@ -25,5 +25,19 @@ namespace RBLMandateRegWebAPI.Controllers
                 throw ex;
             }
         }
+
+        [HttpPost]
+        [Route("api/NPCIUnProcessMandate/GetData1/")]
+        public Dictionary<string, object> BindDetails1(GetDatavalue obj)
+        {
+            try
+            {
+                return obj1.BindNpciApprovalProcessGrid(obj);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
