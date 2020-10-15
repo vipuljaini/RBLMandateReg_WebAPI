@@ -5,6 +5,7 @@ using System.Web;
 using EntityDAL;
 using BusinessLibrary;
 using Encryptions;
+using System.IO;
 using RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor;
 
 namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
