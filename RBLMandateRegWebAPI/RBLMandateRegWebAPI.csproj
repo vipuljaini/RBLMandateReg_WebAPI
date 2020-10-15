@@ -47,21 +47,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BusinessLibrary">
-
-      <HintPath>..\..\QuickZip(Angular)\QuickZipWebApi\LoginWebApi\bin\BusinessLibrary.dll</HintPath>
-      <HintPath>..\BusinessLibrary\bin\Debug\BusinessLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Encryptions">
-      <HintPath>C:\Users\dhruv\Desktop\New dll\Encryptions.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityDAL">
-      <HintPath>..\EntityDAL\bin\Debug\EntityDAL.dll</HintPath>
-
       <HintPath>..\EntityDAL\bin\Debug\BusinessLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Encryptions">
-      <HintPath>..\..\..\For Rohit\BulkImageSingleDataEntry\BulkImageSingleDataEntry\bin\Encryptions.dll</HintPath>
-
+      <HintPath>D:\CloudProjects\CorporateOnBoardingWebAPI\CorporateOnBoarding\EntityDAL\bin\Debug\Encryptions.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityDAL">
+      <HintPath>..\EntityDAL\bin\Debug\EntityDAL.dll</HintPath>
+      <HintPath>..\BusinessLibrary\bin\Debug\BusinessLibrary.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -237,16 +230,11 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-
-    <Compile Include="Controllers\BulkImageExcelReceivingApprovalController.cs" />
-    <Compile Include="Controllers\BISE\BISEController.cs" />
-
     <Compile Include="Controllers\BackUnProcessedMandateRequestController.cs" />
     <Compile Include="Controllers\BulkImageExcelReceivingApprovalController.cs" />
     <Compile Include="Controllers\BISE\BISEController.cs" />
     <Compile Include="Controllers\DestUnprocessedPresentationControllerController.cs" />
     <Compile Include="Controllers\BusinessLogicBISE\BISEDAL.cs" />
-
     <Compile Include="Controllers\FrontUnProcessedMandatesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NPCIUnProcessMandateController.cs" />
@@ -255,15 +243,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-
-    <Compile Include="Models\NPCIUnProcessMandate.cs" />
-    <Compile Include="Models\NPCIUnProcessMandateDAL.cs" />
-    <Compile Include="Models\BulkImageExcelReceivingApprovalModal.cs" />
-    <Compile Include="Models\BISE\BISEHeader.cs" />
-    <Compile Include="Models\FrontUnProcessedMandates\BindFields.cs" />
-    <Compile Include="Models\FrontUnProcessedMandates\DataAccessLayer.cs" />
-    <Compile Include="Models\FrontUnProcessedMandates\RequestFields.cs" />
-
     <Compile Include="Models\Back_Office_Mandate_Request\DataAccessLayer.cs" />
     <Compile Include="Models\Back_Office_Mandate_Request\MandateRequest.cs" />
     <Compile Include="Models\Back_Office_Mandate_Request\MandateRequestData.cs" />
@@ -276,7 +255,6 @@
     <Compile Include="Models\FrontUnProcessedMandates\RequestFields.cs" />
     <Compile Include="Models\NPCIUnProcessMandate.cs" />
     <Compile Include="Models\NPCIUnProcessMandateDAL.cs" />
-
     <Compile Include="Models\UnprocessedPresentationsSponsor\UnprocessedPresentationsDAL.cs" />
     <Compile Include="Models\UnprocessedPresentationsSponsor\UserDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -366,11 +344,9 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-
     <ProjectReference Include="..\EntityDAL\EntityDAL.csproj">
       <Project>{CF4643A5-80C9-40B9-AE92-F71B78B5EFD0}</Project>
     </ProjectReference>
-
     <ProjectReference Include="..\BusinessLibrary\BusinessLibrary.csproj">
       <Project>{82e12120-2ba7-4313-ab7f-f845f69980bb}</Project>
       <Name>BusinessLibrary</Name>
