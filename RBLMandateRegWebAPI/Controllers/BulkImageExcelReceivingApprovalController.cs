@@ -18,6 +18,7 @@ namespace RBLMandateRegWebAPI.Controllers
         {
             try
             {
+
                 BulkImageExcelReceivingApprovalModallist res = new BulkImageExcelReceivingApprovalModallist();
                 QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();
                 var Result = dbcontext.MultipleResults("sp_Temp_BulkImageExcelReceivingApproval").With<BulkImageExcelReceivingApprovalModal>().Execute("@QueryType", "FetchData");
