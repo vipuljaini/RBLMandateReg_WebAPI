@@ -24,5 +24,44 @@ namespace RBLMandateRegWebAPI.Models.FrontUnProcessedMandates
                 throw ex;
             }
         }
+
+        public Dictionary<string, object> BindGridUnderProcess(RequestFields Data)
+        {
+            try
+            {
+                var Result = Common.Getdata(context.MultipleResults("[dbo].[Sp_FrontUnProcessedMandate]").With<BindFields>().Execute("@QueryType", "@UserId", "@EntityId", "BindGridUnderProcess", "2", "2"));  //Dbsecurity.Decrypt(Data.UserId), Dbsecurity.Decrypt(Data.EntityId)
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Dictionary<string, object> GetUMRN(RequestFields Data)
+        {
+            try
+            {
+                var Result = Common.Getdata(context.MultipleResults("[dbo].[Sp_FrontUnProcessedMandate]").With<BindFields>().Execute("@QueryType", "@UserId", "@EntityId", "GetUMRN", "2", "2"));  //Dbsecurity.Decrypt(Data.UserId), Dbsecurity.Decrypt(Data.EntityId)
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Dictionary<string, object> GetResponse(RequestFields Data)
+        {
+            try
+            {
+                var Result = Common.Getdata(context.MultipleResults("[dbo].[Sp_FrontUnProcessedMandate]").With<BindFields>().Execute("@QueryType", "@UserId", "@EntityId", "GetResponse", "2", "2"));  //Dbsecurity.Decrypt(Data.UserId), Dbsecurity.Decrypt(Data.EntityId)
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
