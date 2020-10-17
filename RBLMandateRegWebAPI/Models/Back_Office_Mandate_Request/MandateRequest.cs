@@ -9,5 +9,6 @@ namespace RBLMandateRegWebAPI.Models.Back_Office_Mandate_Request
     {
         public string Date { get; set; }
         public string UserID { get; set; }
+        public string BatchNo { get; set; }
     }
 }
