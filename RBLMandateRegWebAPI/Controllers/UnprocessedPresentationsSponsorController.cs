@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using EntityDAL;
+using BusinessLibrary;
+using System.IO;
+using RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor;
+
+namespace RBLMandateRegWebAPI.Controllers
+{
+    public class UnprocessedPresentationsSponsorController : ApiController
+    {
+        UnprocessedPresentationsDAL obj = new UnprocessedPresentationsDAL();
+
+        [HttpPost]
+        [Route("api/UnprocessedPresentationsFront/BindHeaderGrid")]
+        public Dictionary<string, object> BindHeaderGrid(UserDetails data)
+        {
+            return obj.BindHeaderGrid(data);
+        }
+
+        [HttpPost]
+        [Route("api/UnprocessedPresentationsFront/FrontUnprocessedPresentationsDetails")]
+        public Dictionary<string, object> BindDetailsGrid(UserDetails data)
+        {
+            return obj.BindDetailsGrid(data);
+        }
+    }
+}
