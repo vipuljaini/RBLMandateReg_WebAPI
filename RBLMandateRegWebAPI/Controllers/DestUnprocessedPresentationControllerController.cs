@@ -20,6 +20,7 @@ namespace RBLMandateRegWebAPI.Controllers
         {
             try
             {
+
                 var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[TEMPDESTPRESENT]").With<Binddata>().With<Dstatus>().Execute("@QueryType", "@Status", "GetPresentmentdata", Convert.ToString(Getdata.Status)));
 
                 return Result;
