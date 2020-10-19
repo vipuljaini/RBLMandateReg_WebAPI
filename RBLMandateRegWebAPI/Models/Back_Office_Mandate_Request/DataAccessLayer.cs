@@ -52,5 +52,44 @@ namespace RBLMandateRegWebAPI.Models.Back_Office_Mandate_Request
                 throw ex;
             }
         }
+
+        public Dictionary<string, object> UpdateHeaderStatus(MandateRequest MandateRequestData)
+        {
+            try
+            {
+                var Result = Common.Getdata(context.MultipleResults("[dbo].[Sp_RBL_BackOffice]").With<MandateRequestData>().Execute("@QueryType", "@BatchNo", "UpdateHeaderStatus", MandateRequestData.BatchNo));
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+    public Dictionary<string, object> ProcessedMandateResponseFetchData(MandateRequest MandateRequestData)
+    {
+        try
+        {
+            var Result = Common.Getdata(context.MultipleResults("[dbo].[Sp_RBL_BackOffice]").With<BindFields>().Execute("@QueryType", "ProcessedMandateResponseFetchData"));
+            return Result;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+
+        public Dictionary<string, object> ProcessedMandateResponseShowRespons(MandateRequest MandateRequestData)
+        {
+            try
+            {
+                var Result = Common.Getdata(context.MultipleResults("[dbo].[Sp_RBL_BackOffice]").With<BindFields>().Execute("@QueryType", "ProcessedMandateResponseShowResponse"));
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

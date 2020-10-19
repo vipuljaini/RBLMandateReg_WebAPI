@@ -233,10 +233,14 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
 
+    <Compile Include="Controllers\BackUnProcessedMandateResponseController.cs" />
+
+
 
     <Compile Include="Controllers\BackUnProcessedMandateRequestController.cs" />
     <Compile Include="Controllers\DestUnprocessedPresentationControllerController.cs" />
     <Compile Include="Controllers\BusinessLogicBISE\BISEDAL.cs" />
+
     <Compile Include="Controllers\FrontUnProcessedMandatesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NPCIUnProcessMandateController.cs" />
@@ -246,6 +250,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
 
+    <Compile Include="Models\BackUnProcessedMandateResponse\BindFields.cs" />
+    <Compile Include="Models\BackUnProcessedMandateResponse\DataAccessLayer.cs" />
+    <Compile Include="Models\BackUnProcessedMandateResponse\RequestFields.cs" />
+    <Compile Include="Models\FrontUnProcessedMandates\BindFields.cs" />
+    <Compile Include="Models\FrontUnProcessedMandates\DataAccessLayer.cs" />
+    <Compile Include="Models\FrontUnProcessedMandates\RequestFields.cs" />
+
+
     <Compile Include="Models\Back_Office_Mandate_Request\DataAccessLayer.cs" />
     <Compile Include="Models\Back_Office_Mandate_Request\MandateRequest.cs" />
     <Compile Include="Models\Back_Office_Mandate_Request\MandateRequestData.cs" />
@@ -254,6 +266,7 @@
     <Compile Include="Models\NPCIUnProcessMandateDAL.cs" />
     <Compile Include="Models\UnprocessedPresentationsSponsor\UnprocessedPresentationsDAL.cs" />
     <Compile Include="Models\UnprocessedPresentationsSponsor\UserDetails.cs" />
+
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
