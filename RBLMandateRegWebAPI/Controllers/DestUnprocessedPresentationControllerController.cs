@@ -91,6 +91,20 @@ namespace RBLMandateRegWebAPI.Controllers
             catch (Exception ex) { throw ex; }
         }
 
+        [HttpPost]
+        [Route("api/DestPresentment3/Getdata4")]
+        public Dictionary<string, object> Getdata4([FromBody] DestPresent Getdata)
+        {
+            try
+            {
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[TEMPDESTPRESENT]").With<Dstatus>().Execute("@QueryType", "@Status", "GetPresentmentdata5", Convert.ToString(Getdata.Status)));
+
+                return Result;
+
+            }
+            catch (Exception ex) { throw ex; }
+        }
+
 
 
     }
