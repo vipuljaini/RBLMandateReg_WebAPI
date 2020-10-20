@@ -20,16 +20,16 @@ namespace RBLMandateRegWebAPI.Models
     }
     public class BulkImageExcelReceivingApprovalModal
     { 
-        public string Sno { get; set; }
-        public string BankName { get; set; }
-        public string CorPoratename { get; set; }
+        public string SrNo { get; set; }
+        public string Bank_Name { get; set; }
+        public string CorporateName { get; set; }
         public string ActivityNo { get; set; }
-        public string CountRcds { get; set; }
+        public string Noofrecipient { get; set; }
         public string ImageUpload { get; set; }
-        public string NoOfVerified { get; set; }
+        public string NoofVerified { get; set; }
         public string NoOfRejected { get; set; }
-        public string UploadedBy { get; set; }
-        public string UploadedOn { get; set; }
+        public string CreatedBy { get; set; }
+        public string CreatedOn { get; set; }
         public string UpdatedBy { get; set; }
         public string UpdateOn { get; set; }
         public string Status { get; set; }

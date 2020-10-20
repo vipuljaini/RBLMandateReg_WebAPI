@@ -66,6 +66,78 @@ namespace RBLMandateRegWebAPI.Controllers.BusinessLogicBISE
             }
         }
 
+        public Dictionary<string, object> ActivityCompleted()
+        {
+            try
+            {
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Proc_BISE]").With<Response>().Execute("@QueryType", "ActivityCompleted"));
+                return Result;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        public Dictionary<string, object> Save()
+        {
+            try
+            {
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Proc_BISE]").With<Response>().Execute("@QueryType", "Save"));
+                return Result;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Dictionary<string, object> IsSave()
+        {
+            try
+            {
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Proc_BISE]").With<Response>().Execute("@QueryType", "IsSave"));
+                return Result;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public Dictionary<string, object> IsSentToChecker()
+        {
+            try
+            {
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Proc_BISE]").With<Response>().Execute("@QueryType", "IsSentToChecker"));
+                return Result;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        public Dictionary<string, object> IsApprove()
+        {
+            try
+            {
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Proc_BISE]").With<Response>().Execute("@QueryType", "IsApprove"));
+                return Result;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
 
     }
 }
