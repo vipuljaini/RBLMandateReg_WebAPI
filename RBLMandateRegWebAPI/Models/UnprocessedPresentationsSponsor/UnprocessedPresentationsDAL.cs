@@ -61,6 +61,22 @@ namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
             }
         }
 
+        public Dictionary<string, object> GetPresentmentStatus(UserDetails data)
+        {
+
+            try
+            {
+                var results = Common.Getdata(dbcontext.MultipleResults("[dbo].[TEMPDESTPRESENT_Sponsor]").With<GetPresentmentStatus>()
+                          .Execute("@Querytype", "@EntityId", "@UserId", "GetPresentmentStatus", Dbsecurity.Decrypt(data.EntityId), Dbsecurity.Decrypt(data.UserId)));
+                return results;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public Dictionary<string, object> BindActivityDetails_grid(UserDetails data)
         {
 
