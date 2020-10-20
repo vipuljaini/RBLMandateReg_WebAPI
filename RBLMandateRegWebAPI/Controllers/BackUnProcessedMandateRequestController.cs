@@ -69,5 +69,14 @@ namespace RBLMandateRegWebAPI.Controllers
 
         }
 
+
+         [HttpPost]
+        [Route("api/RBLMandate/RejectMandate")]
+        public Dictionary<string, object> RejectMandate([FromBody] MandateRequest MandateRequestData)
+        {
+            return objRBLMandateRequest.RejectMandate(MandateRequestData);
+
+        }
+
     }
 }

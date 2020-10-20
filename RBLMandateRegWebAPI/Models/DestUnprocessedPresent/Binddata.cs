@@ -10,7 +10,9 @@ namespace RBLMandateRegWebAPI.Models.DestUnprocessedPresent
         public Int64 SNo { get; set; }
         public Int32 PTID { get; set; }
         public string Lotno { get; set; }
+
         public string LotAmount { get; set; }
+
         public string Presentationdate { get; set; }
         //public string ActivityNo { get; set; }
         //public string PresentationNo { get; set; }
@@ -34,7 +36,9 @@ namespace RBLMandateRegWebAPI.Models.DestUnprocessedPresent
     public class Dstatus
     {
         public Int32 DestStatus { get; set; }
+
         public Int32 DestFStatus { get; set; }
+
     }
 
     public class Binddatadetail
@@ -50,7 +54,11 @@ namespace RBLMandateRegWebAPI.Models.DestUnprocessedPresent
         //public string UpdatedBy { get; set; }
         //public string UpdatedOn { get; set; }
         public string amount { get; set; }
+
+        public string sponsorbankcode { get; set; }
+
         //public string sponsorbankcode { get; set; }
+
         //public string Branch { get; set; }
         //public string Region { get; set; }
         //public string Product { get; set; }
@@ -58,6 +66,7 @@ namespace RBLMandateRegWebAPI.Models.DestUnprocessedPresent
         //public string LastStatusOn { get; set; }
         //public string Filestatus { get; set; }
         public string utilitycode { get; set; }
+
         public string AC { get; set; }
         public string AcHolderName { get; set; }
 
@@ -77,7 +86,11 @@ namespace RBLMandateRegWebAPI.Models.DestUnprocessedPresent
         //public string UpdatedBy { get; set; }
         //public string UpdatedOn { get; set; }
         public string amount { get; set; }
+
+        public string sponsorbankcode { get; set; }
+
         //public string sponsorbankcode { get; set; }
+
         //public string Branch { get; set; }
         //public string Region { get; set; }
         //public string Product { get; set; }
@@ -86,8 +99,10 @@ namespace RBLMandateRegWebAPI.Models.DestUnprocessedPresent
         //public string Filestatus { get; set; }
         public string utilitycode { get; set; }
         public string reason { get; set; }
+
         public string AC { get; set; }
         public string AcHolderName { get; set; }
+
 
 
     }
