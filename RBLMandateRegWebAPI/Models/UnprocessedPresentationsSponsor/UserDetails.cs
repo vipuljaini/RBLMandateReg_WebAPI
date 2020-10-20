@@ -57,6 +57,12 @@ namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
         public Int32 value { get; set; }
     }
 
+    
+         public class GetPresentmentStatus
+    {
+        public string status { get; set; }
+    }
+
     public class DataTable1
     {
         public Int64 SrNo { get; set; }

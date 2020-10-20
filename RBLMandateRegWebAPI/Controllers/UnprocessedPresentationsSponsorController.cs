@@ -37,6 +37,12 @@ namespace RBLMandateRegWebAPI.Controllers
             return obj.SubmitActivityData(data);
         }
 
+        [HttpPost]
+        [Route("api/UnprocessedPresentationsFront/GetPresentmentStatus")]
+        public Dictionary<string, object> GetPresentmentStatus(UserDetails data)
+        {
+            return obj.GetPresentmentStatus(data);
+        }
 
 
         [HttpPost]
