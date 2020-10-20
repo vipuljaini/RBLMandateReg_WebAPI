@@ -47,4 +47,35 @@ namespace RBLMandateRegWebAPI.Models
     {
         public string AppId { get; set; }
     }
+
+    public class GetMandateData
+    {
+        public string MandateId { get; set; }
+        public string Frequency { get; set; }
+        public string DebitType { get; set; }
+        public string DateOnMandate { get; set; }
+        public string Refrence1 { get; set; }
+        public string Refrence2 { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Customer2 { get; set; }
+        public string JPGPath { get; set; }
+
+        public string Customer3 { get; set; }
+        public string Customer1 { get; set; }
+        public string Todate { get; set; }
+        public string FromDate { get; set; }
+        public string AmountRupeesInWords { get; set; }
+        public string AmountRupees { get; set; }
+        public string BankName { get; set; }
+        public string EmailId { get; set; }
+
+        public string AcNo { get; set; }
+        public string IFSC { get; set; }
+        public string ToDebit { get; set; }
+        public string UtilityCode { get; set; }
+        public string SponsorbankCode { get; set; }
+        //public Int64 ActivityId { get; set; }
+        public string CategoryCode { get; set; }
+        
+    }
 }
