@@ -2,6 +2,7 @@
 using EntityDAL;
 using System;
 using System.Collections.Generic;
+using Encryptions;
 using System.Linq;
 using System.Web;
 
@@ -16,7 +17,7 @@ namespace RBLMandateRegWebAPI.Models.Back_Office_Mandate_Request
         {
             try
             {
-                var Result = Common.Getdata(context.MultipleResults("[dbo].[Sp_RBL_BackOffice]").With<MandateRequestData>().Execute("@QueryType", "BindUnProcessGrid"));
+                var Result = Common.Getdata(context.MultipleResults("[dbo].[Sp_RBL_BackOffice]").With<MandateRequestData>().Execute("@QueryType","@Userid", "BindUnProcessGrid",Dbsecurity.Decrypt(MandateRequestData.UserID)));
                 return Result;
             }
             catch (Exception ex)
@@ -30,7 +31,7 @@ namespace RBLMandateRegWebAPI.Models.Back_Office_Mandate_Request
         {
             try
             {
-                var Result = Common.Getdata(context.MultipleResults("[dbo].[Sp_RBL_BackOffice]").With<UnderprocessHeaderData>().Execute("@QueryType", "BindUnderProcessHeader"));
+                var Result = Common.Getdata(context.MultipleResults("[dbo].[Sp_RBL_BackOffice]").With<UnderprocessHeaderData>().Execute("@QueryType", "@Userid", "BindUnderProcessHeader", Dbsecurity.Decrypt(MandateRequestData.UserID)));
                 return Result;
             }
             catch (Exception ex)
@@ -84,6 +85,19 @@ namespace RBLMandateRegWebAPI.Models.Back_Office_Mandate_Request
             try
             {
                 var Result = Common.Getdata(context.MultipleResults("[dbo].[Sp_RBL_BackOffice]").With<BindFields>().Execute("@QueryType", "ProcessedMandateResponseShowResponse"));
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Dictionary<string, object> RejectMandate(MandateRequest MandateRequestData)
+        {
+            try
+            {
+                var Result = Common.Getdata(context.MultipleResults("[dbo].[Sp_RBL_BackOffice]").With<MandateRequestData>().Execute("@QueryType", "@UserId", "BindRejectedMandates",Dbsecurity.Decrypt(MandateRequestData.UserID)));
                 return Result;
             }
             catch (Exception ex)
