@@ -7,7 +7,9 @@ namespace RBLMandateRegWebAPI.Models.BackUnProcessedMandateResponse
 {
     public class RequestFields
     {
-        public string UserId { get; set; }
-        public string EntityId { get; set; }
+        public string Status { get; set; }
+        public string Status1 { get; set; }
+        
+        //   public string EntityId { get; set; }
     }
 }
