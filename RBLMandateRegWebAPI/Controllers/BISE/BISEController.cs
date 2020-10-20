@@ -79,5 +79,86 @@ namespace RBLMandateRegWebAPI.Controllers.BISE
         }
 
 
+
+        [HttpPost]
+        [Route("api/BISETemp/ActivityCompleted/")]
+        public Dictionary<string, object> ActivityCompleted()
+        {
+            try
+            {
+                return obj.ActivityCompleted();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        [HttpPost]
+        [Route("api/BISETemp/Save/")]
+        public Dictionary<string, object> Save()
+        {
+            try
+            {
+                return obj.Save();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [HttpPost]
+        [Route("api/BISETemp/IsSave/")]
+        public Dictionary<string, object> IsSave()
+        {
+            try
+            {
+                return obj.IsSave();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        [HttpPost]
+        [Route("api/BISETemp/IsSentToChecker/")]
+        public Dictionary<string, object> IsSentToChecker()
+        {
+            try
+            {
+                return obj.IsSentToChecker();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        [HttpPost]
+        [Route("api/BISETemp/IsApprove/")]
+        public Dictionary<string, object> IsApprove()
+        {
+            try
+            {
+                return obj.IsApprove();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+
     }
 }

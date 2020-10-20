@@ -10,11 +10,156 @@ using System.Web.Http;
 using System.Reflection;
 using System.Data;
 using Encryptions;
+using RBLMandateRegWebAPI.Controllers.BussinessLogicBIBE;
 
 namespace RBLMandateRegWebAPI.Controllers
 {
     public class BulkImageExcelReceivingApprovalController : ApiController
     {
+        BIBEDAL obj = new BIBEDAL();
+
+        [HttpPost]
+        [Route("api/BIBETemp/BindDetails/")]
+        public Dictionary<string, object> BindDetails()
+        {
+            try
+            {
+                return obj.BindDetails();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [HttpPost]
+        [Route("api/BIBETemp/SentToChecker/")]
+        public Dictionary<string, object> SentToChecker()
+        {
+            try
+            {
+                return obj.SentToChecker();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        [HttpPost]
+        [Route("api/BIBETemp/Approve/")]
+        public Dictionary<string, object> Approve()
+        {
+            try
+            {
+                return obj.Approve();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+
+        [HttpPost]
+        [Route("api/BIBETemp/ActivityCompleted/")]
+        public Dictionary<string, object> ActivityCompleted()
+        {
+            try
+            {
+                return obj.ActivityCompleted();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        [HttpPost]
+        [Route("api/BIBETemp/Accept/")]
+        public Dictionary<string, object> Accept()
+        {
+            try
+            {
+                return obj.Accept();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        [HttpPost]
+        [Route("api/BIBETemp/Reject/")]
+        public Dictionary<string, object> Reject()
+        {
+            try
+            {
+                return obj.Reject();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [HttpPost]
+        [Route("api/BIBETemp/IsSave/")]
+        public Dictionary<string, object> IsSave()
+        {
+            try
+            {
+                return obj.IsSave();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        [HttpPost]
+        [Route("api/BIBETemp/IsSentToChecker/")]
+        public Dictionary<string, object> IsSentToChecker()
+        {
+            try
+            {
+                return obj.IsSentToChecker();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        [HttpPost]
+        [Route("api/BIBETemp/IsApprove/")]
+        public Dictionary<string, object> IsApprove()
+        {
+            try
+            {
+                return obj.IsApprove();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+
         [HttpPost]
         [Route("api/BulkImageExcelReceivingApproval/FetchData")]
         public BulkImageExcelReceivingApprovalModallist FetchData(BulkImageExcelReceivingApprovalModal Acdata)
@@ -44,7 +189,7 @@ namespace RBLMandateRegWebAPI.Controllers
                 QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();               
 
                 var results = dbcontext.MultipleResults("[dbo].[sp_Temp_BulkImageExcelReceivingApproval]").With<GetMandateData>()
-                          .Execute("@Querytype", "GetMandateData");
+                          .Execute("@Querytype", "@BIBE_Count", "GetMandateData", ID);
                 Gridlist = results[0].Cast<GetMandateData>().ToList();
                 DataTable dt = new DataTable();
                 dt = ToDataTable(Gridlist);
