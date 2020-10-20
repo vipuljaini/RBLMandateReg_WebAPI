@@ -5,7 +5,7 @@ using System.Web;
 
 namespace RBLMandateRegWebAPI.Models.BackUnProcessedMandateResponse
 {
-    public class BindFields
+    public class BindFields1
     {
         public Int64 Sno { get; set; }
         public string MandateId { get; set; }
@@ -19,6 +19,9 @@ namespace RBLMandateRegWebAPI.Models.BackUnProcessedMandateResponse
         public string CorporateName { get; set; }
         public string utlitycode { get; set; }
         public string destbankifsc { get; set; }
+        public string rejectiontype { get; set; }
+        public string rejectedon { get; set; }
+        public string rejectedby { get; set; }
         //public string AmountRupees { get; set; }
         //public string AmountRupeesInWords { get; set; }
         //public string AcNo { get; set; }
