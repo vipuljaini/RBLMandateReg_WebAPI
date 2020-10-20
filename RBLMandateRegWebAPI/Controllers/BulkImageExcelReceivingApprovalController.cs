@@ -32,6 +32,7 @@ namespace RBLMandateRegWebAPI.Controllers
             {
                 return null;
             }
+
         }
         [HttpPost]
         [Route("api/BulkImageExcelReceivingApproval/GetMandateData/{ID}")]

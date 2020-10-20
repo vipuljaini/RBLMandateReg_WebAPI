@@ -37,8 +37,8 @@ namespace RBLMandateRegWebAPI.Models.Back_Office_Mandate_Request
     public class UnderprocessHeaderData
     {
         public string RBLBatchNo { get; set; }
-        public string UtilityCode { get; set; }
         public string SponsorbankCode { get; set; }
+        public Int32 NoOfRecords { get; set; }
         public string HeaderStatus { get; set; }
     }
 
