@@ -31,6 +31,22 @@ namespace RBLMandateRegWebAPI.Controllers
         }
 
         [HttpPost]
+        [Route("api/BackUnProcessedMandateRespose/BindGrid9")]
+        public Dictionary<string, object> BindGrid9([FromBody] RequestFields Data)
+        {
+            try
+            {
+                var Result = Common.Getdata(context.MultipleResults("[dbo].[Sp_FrontUnProcessedMandate]").With<RequestFields>().Execute("@QueryType", "@Status", "BindGrid9", Data.Status));  //Dbsecurity.Decrypt(Data.UserId), Dbsecurity.Decrypt(Data.EntityId)
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        [HttpPost]
         [Route("api/BackUnProcessedMandateRespose/BindGrid1")]
         public Dictionary<string, object> BindGrid1([FromBody] RequestFields Data)
         {
