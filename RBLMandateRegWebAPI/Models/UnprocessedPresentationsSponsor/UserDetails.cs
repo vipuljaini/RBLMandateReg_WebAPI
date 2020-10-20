@@ -9,6 +9,7 @@ namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
     {
         public string EntityId { get; set; }
         public string UserId { get; set; }
+        public string status { get; set; }
     }
 
 
@@ -48,6 +49,12 @@ namespace RBLMandateRegWebAPI.Models.UnprocessedPresentationsSponsor
         public string Reason { get; set; }
         public string sponsorbankcode { get; set; }
         public string utilitycode { get; set; }
+         public string Presentationdate { get; set; }
+    }
+
+    public class SubmitActivityData
+    {
+        public Int32 value { get; set; }
     }
 
     public class DataTable1
