@@ -50,7 +50,7 @@
       <HintPath>..\EntityDAL\bin\Debug\BusinessLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Encryptions">
-      <HintPath>D:\CloudProjects\CorporateOnBoardingWebAPI\CorporateOnBoarding\EntityDAL\bin\Debug\Encryptions.dll</HintPath>
+      <HintPath>C:\Users\Rock\Downloads\Encryptions.dll</HintPath>
     </Reference>
     <Reference Include="EntityDAL">
       <HintPath>..\EntityDAL\bin\Debug\EntityDAL.dll</HintPath>
@@ -234,7 +234,11 @@
     <Compile Include="Controllers\BackUnProcessedMandateRequestController.cs" />
     <Compile Include="Controllers\BISE\BISEController.cs" />
     <Compile Include="Controllers\BulkImageExcelReceivingApprovalController.cs" />
+
     <Compile Include="Controllers\BussinessLogicBIBE\BIBEDAL.cs" />
+
+
+
     <Compile Include="Controllers\DestUnprocessedPresentationControllerController.cs" />
     <Compile Include="Controllers\BusinessLogicBISE\BISEDAL.cs" />
     <Compile Include="Controllers\FrontUnProcessedMandatesController.cs" />
@@ -246,11 +250,16 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BackUnProcessedMandateResponse\BindFields.cs" />
+    <Compile Include="Models\BackUnProcessedMandateResponse\BindFields1.cs" />
     <Compile Include="Models\BackUnProcessedMandateResponse\DataAccessLayer.cs" />
     <Compile Include="Models\BackUnProcessedMandateResponse\RequestFields.cs" />
     <Compile Include="Models\Bindcommondata.cs" />
     <Compile Include="Models\BISE\BISEHeader.cs" />
     <Compile Include="Models\BulkImageExcelReceivingApprovalModal.cs" />
+
+
+
+
     <Compile Include="Models\FrontUnProcessedMandates\BindFields.cs" />
     <Compile Include="Models\FrontUnProcessedMandates\DataAccessLayer.cs" />
     <Compile Include="Models\FrontUnProcessedMandates\RequestFields.cs" />
@@ -340,6 +349,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+
+    <Folder Include="Bankcorporate\Processed\" />
+    <Folder Include="Bankcorporate\Unprocessed\" />
+    <Folder Include="NPCI\Processed\" />
+    <Folder Include="NPCI\Unprocessed\" />
+    <Folder Include="TempNPCI\" />
+
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -371,9 +387,6 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EntityDAL\EntityDAL.csproj">
-      <Project>{CF4643A5-80C9-40B9-AE92-F71B78B5EFD0}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\BusinessLibrary\BusinessLibrary.csproj">
       <Project>{82e12120-2ba7-4313-ab7f-f845f69980bb}</Project>
       <Name>BusinessLibrary</Name>
