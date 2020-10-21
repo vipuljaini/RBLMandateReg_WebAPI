@@ -234,11 +234,8 @@
     <Compile Include="Controllers\BackUnProcessedMandateRequestController.cs" />
     <Compile Include="Controllers\BISE\BISEController.cs" />
     <Compile Include="Controllers\BulkImageExcelReceivingApprovalController.cs" />
-
     <Compile Include="Controllers\BussinessLogicBIBE\BIBEDAL.cs" />
-
-
-
+    <Compile Include="Controllers\CorporateRequestController.cs" />
     <Compile Include="Controllers\DestUnprocessedPresentationControllerController.cs" />
     <Compile Include="Controllers\BusinessLogicBISE\BISEDAL.cs" />
     <Compile Include="Controllers\FrontUnProcessedMandatesController.cs" />
@@ -256,10 +253,9 @@
     <Compile Include="Models\Bindcommondata.cs" />
     <Compile Include="Models\BISE\BISEHeader.cs" />
     <Compile Include="Models\BulkImageExcelReceivingApprovalModal.cs" />
-
-
-
-
+    <Compile Include="Models\CorporateRequest\BindGridFields.cs" />
+    <Compile Include="Models\CorporateRequest\DataAccessLayer.cs" />
+    <Compile Include="Models\CorporateRequest\RequestFields.cs" />
     <Compile Include="Models\FrontUnProcessedMandates\BindFields.cs" />
     <Compile Include="Models\FrontUnProcessedMandates\DataAccessLayer.cs" />
     <Compile Include="Models\FrontUnProcessedMandates\RequestFields.cs" />
@@ -349,13 +345,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-
     <Folder Include="Bankcorporate\Processed\" />
     <Folder Include="Bankcorporate\Unprocessed\" />
     <Folder Include="NPCI\Processed\" />
     <Folder Include="NPCI\Unprocessed\" />
     <Folder Include="TempNPCI\" />
-
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
